@@ -62,10 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, requestcode, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
                 Notification.BigTextStyle bigText = new Notification.BigTextStyle();
-                bigText.bigText("This is one big text.");
-                bigText.setBigContentTitle("Big Text - Content Title");
+                bigText.bigText("This is one big text");
+                bigText.setBigContentTitle("Big Text - Long Content");
                 bigText.setSummaryText("Reflection Journal?");
-
                 Notification.Builder builder = new Notification.Builder(MainActivity.this);
                 builder.setContentTitle("Amazing Offer");
                 builder.setContentText("Subject");
